@@ -15,14 +15,33 @@ public class BulletSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //최근 생성 이후의 누적 시간을 0으로 초기화
         timeAfterSpawn = 0f;
+        //탄알 생성 간격을 SpawnRateMin과 SpawnRatemax 사이에서 랜덤
         spawnRate = Random.Range(spawnRateMin, spawnRateMax);
+        // PlayerController 컴포넌트를 가진 게임 오브젝트를 찾아 조준 대상으로 조준
         target = FindObjectOfType<PlayerController>().transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //timeAfterspawn 갱신
+        timeAfterSpawn += Time.deltaTime;
+        //최근 생성 시점에서부터 누적된 사긴이 생성주기보다 크거나 같다면
+        if(timeAfterSpawn>= spawnRate)
+        {
+            //누적된 시간 리셋
+            timeAfterSpawn = 0f;
+
+            //bulletPrefab  복제본을 transform.position 위치와 transform.rotation 회전으로 생성
+            GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+            // 생성된 bullet게임 오브젝트의 정면 방향이 target을 향하도록 회전
+            bullet.transform.LookAt(target);
+            //다음번 생성 간격을 spawnRateMin, spawnRateMax 사이에서 랜덤지정
+            spawnRate = Random.Range(spawnRateMin, spawnRateMax);
+
+
+        }
     }
 }
