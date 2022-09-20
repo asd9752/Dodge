@@ -350,6 +350,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script Collection/Bullet.cs"
+"Assets/Script Collection/BulletSpawner.cs"
 "Assets/Script Collection/NewBehaviourScript.cs"
 "Assets/Script Collection/PlayerControll2.cs"
 "Assets/Script Collection/PlayerController.cs"
