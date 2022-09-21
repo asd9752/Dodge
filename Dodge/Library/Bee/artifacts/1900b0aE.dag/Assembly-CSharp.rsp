@@ -349,13 +349,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Script Collection/Bullet.cs"
-"Assets/Script Collection/BulletSpawner.cs"
-"Assets/Script Collection/NewBehaviourScript.cs"
-"Assets/Script Collection/PlayerControll2.cs"
-"Assets/Script Collection/PlayerController.cs"
-"Assets/Script Collection/PlayerController3.cs"
-"Assets/Script Collection/PlayerController4.cs"
+"Assets/02.Script/Bullet.cs"
+"Assets/02.Script/BulletSpawner.cs"
+"Assets/02.Script/NewBehaviourScript.cs"
+"Assets/02.Script/PlayerControll2.cs"
+"Assets/02.Script/PlayerController.cs"
+"Assets/02.Script/PlayerController3.cs"
+"Assets/02.Script/PlayerController4.cs"
+"Assets/02.Script/Rotator.cs"
 -langversion:9.0
 
 /deterministic
