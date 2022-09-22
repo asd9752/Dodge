@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
         // 게임 오브젝트에서 Rigidbodty 컴포넌트를 찾아 bulletRigidbody에 할당
         bulletRigidbody = GetComponent<Rigidbody>();
         //리지드바디 속도 = speed* 방향
-        bulletRigidbody.velocity = new Vector3(0,0,1) * speed;
+        bulletRigidbody.velocity = transform.forward * speed;
         //3초 뒤에 자신의 게임 오브젝트 파괴
         Destroy(gameObject, 3f);
 
