@@ -358,6 +358,7 @@
 "Assets/02.Script/PlayerController3.cs"
 "Assets/02.Script/PlayerController4.cs"
 "Assets/02.Script/Rotator.cs"
+"Assets/8K Skybox Pack Free/Example Scenes/Script/RotateCamera.cs"
 -langversion:9.0
 
 /deterministic
