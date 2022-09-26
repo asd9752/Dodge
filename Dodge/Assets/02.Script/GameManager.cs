@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
             //게임오버 상태에서 R키를 누른 경우
             if(Input.GetKeyDown(KeyCode.R))
             {
-              SceneManager.LoadScene("Main Scenes");
+              SceneManager.LoadScene("Test Scene");
             }
         }
 
